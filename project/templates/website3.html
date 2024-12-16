@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Route Finder</title>
+    <link rel="stylesheet" href="C:\Users\USER\project\static\css\styles.css">
+</head>
+<body>
+    <header>
+        <h1>Best Route Finder</h1>
+    </header>
+
+    <main>
+        <!-- Step 1: Select Starting Point and Destination -->
+        <section id="selection-section">
+            <h2>Select Your Journey</h2>
+            <form id="selection-form">
+                <label for="starting-point">Starting Point:</label>
+                <select id="starting-point" name="starting-point" required>
+                    <option value="">Select</option>
+                    <option value="place-a">Place A</option>
+                    <option value="place-b">Place B</option>
+                </select>
+
+                <label for="destination">Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Select</option>
+                    <option value="place-c">Place C</option>
+                    <option value="place-d">Place D</option>
+                </select>
+
+                <button type="submit">Confirm</button>
+            </form>
+        </section>
+
+        <!-- Step 2: Show Routes (Hidden Initially) -->
+        <section id="routes-section" style="display: none;">
+            <h2>Select Routes to Compare</h2>
+            <form id="routes-form">
+                <label>
+                    <input type="checkbox" name="route" value="route-1"> Route 1
+                </label>
+                <label>
+                    <input type="checkbox" name="route" value="route-2"> Route 2
+                </label>
+                <label>
+                    <input type="checkbox" name="route" value="route-3"> Route 3
+                </label>
+                <label>
+                    <input type="checkbox" name="route" value="route-4"> Route 4
+                </label>
+
+                <button type="submit">Compare</button>
+            </form>
+        </section>
+
+        <!-- Step 3: Loading Message -->
+        <section id="loading-section" style="display: none;">
+            <h2>Please Wait...</h2>
+            <p>Approximate time: 1.5 minutes</p>
+            <div class="spinner"></div>
+        </section>
+
+        <!-- Step 4: Results Section -->
+        <section id="results-section" style="display: none;">
+            <h2>Comparison Results</h2>
+            <div id="results-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Best Route Finder</p>
+    </footer>
+
+    <script src="C:\Users\USER\project\static\js\scripts.js"></script>
+</body>
+</html>
